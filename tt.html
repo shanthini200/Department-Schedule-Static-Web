@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cse - Cyber Security - year III</title>
+    <style>
+        .hidden { display: none; }
+        .container { width: 80%; margin: auto; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .clickable { cursor: pointer; color: blue; text-decoration: underline; }
+    </style>
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sri Venkateswaraa College of Technology</h1>
+        <h2 class="clickable" onclick="toggleVisibility('timetable')">Cse - Cyber Security - year III</h2>
+        <div id="timetable" class="hidden">
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>8:30-9:30</th> 
+                    <th>9:30-10:15</th> 
+                    <th>10:15-11:00</th> 
+                    <th>Tea Break</th> 
+                    <th>11:15-12:00</th> 
+                    <th>12:00-12:45</th> 
+                    <th>Lunch Break</th> 
+                    <th>1:15-2:00</th> 
+                    <th>2:00-2:45</th> 
+                    <th>2:45-3:30</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>DMF</td>
+                    <td>WT</td>
+                    <td>CF</td>
+                    <td rowspan="5">Tea Break</td>
+                    <td>CSM</td>
+                    <td>(TECHNICAL)</td>
+                    <td rowspan="5">Break</td>
+                    <td>(TECHNICAL)</td>
+                    <td colspan="2">DMF(LAB)</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="2">(TECHNICAL)</td>
+                    <td>CSM</td>
+                    <td>CS</td>
+                    <td>CF</td>
+                    <td>ESIA</td>
+                    <td colspan="2">CF(Lab)</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>WT</td>
+                    <td>CSM</td>
+                    <td>ESIA</td>
+                    <td>NS</td>
+                    <td>(COM/REVIEW)</td>
+                    <td>(COM/REVIEW)</td>
+                    <td colspan="2">CF(Lab)</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>CF</td>
+                    <td>DMF</td>
+                    <td>CS</td>
+                    <td colspan="2">CSM(Lab)</td>
+                    <td>CS</td>
+                    <td colspan="2">(APTITUDE/REVIEW)</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>NS</td>
+                    <td>NS</td>
+                    <td>WT</td>
+                    <td colspan="2">CS(Lab)</td>
+                    <td>DMF</td>
+                    <td colspan="2">NS(Lab)</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h2 class="clickable" onclick="toggleVisibility('staffDetails')">Staff Details</h2>
+        <div id="staffDetails" class="hidden">
+            <table>
+                <tr><th>Subject Code</th><th>Subject Name</th><th>Faculty Name</th><th>No. of Periods</th></tr>
+                <tr>
+                    <td>CB3601</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\cyber Forensics.pdf" target="_blank">Cyber Forensics</a></td>
+                    <td>Mr. Aravind Ghosh</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CB3602</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\network security.pdf" target="_blank">Network Security</a></td>
+                    <td>Ms. A.B. Prameela</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CCS375</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\web technologies.pdf" target="_blank">Web Technologies</a></td>
+                    <td>Mr. N. Jagadeesh</td>
+                    <td>3</td>
+                </tr>
+                <tr><td>CCS336</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\cloud services management.pdf" target="_blank">Cloud Services Management</a></td>
+                    <td>Ms. S.Vijayaselvarani</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CCS343</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\digital and mobile forensics.pdf" target="_blank">Digital and Mobile Forensics</a></td>
+                    <td>Mr. Senthilkumar</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CCS340</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\cyber security.pdf" target="_blank">Cyber Security</a></td>
+                    <td>Ms. K.S. Demel Abisha</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>OCE351</td>
+                    <td><a href="C:\Users\shans\OneDrive\Desktop\wt_task\cyber syllabus\cyber syllabus\eia.pdf" target="_blank">Environmental and Social Impact Assessment</a></td>
+                    <td>New Staff (Chemistry)</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
